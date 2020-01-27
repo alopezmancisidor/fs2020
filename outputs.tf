@@ -7,4 +7,3 @@ output "FloatingIP-2" {
 output "LB-Hostname" {
     value = "http://${ibm_is_lb.lb1.hostname}"
 }
-  depends_on = ["ibm_is_floating_ip.floatingip1", "ibm_is_floating_ip.floatingip2", "ibm_is_floating_ip.floatingip3"]
