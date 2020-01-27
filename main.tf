@@ -117,3 +117,4 @@ resource "ibm_is_floating_ip" "floatingip3" {
 output "FloatingIP-3" {
     value = "${ibm_is_floating_ip.floatingip3.address}"
 }
+depends_on = ["ibm_is_floating_ip.floatingip1", "ibm_is_floating_ip.floatingip2", "ibm_is_floating_ip.floatingip3"]
